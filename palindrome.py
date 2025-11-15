@@ -1,9 +1,11 @@
-string = "GADAG"
+# Palindrome Program using user input
 
+def is_palindrome(text):
+    return text == text[::-1]
 
-cleaned = string.replace(" ", "").lower()
+word = input("Enter a string: ")
 
-if cleaned == cleaned[::-1]:
-    print(f"'{string}' is a palindrome")
+if is_palindrome(word):
+    print("Palindrome")
 else:
-    print(f"'{string}' is not a palindrome")
+    print("Not a Palindrome")

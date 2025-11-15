@@ -1,8 +1,9 @@
-# Program to check palindrome
+string = "GADAG"
 
-s = input("Enter a string: ")
 
-if s == s[::-1]:
-    print("Palindrome")
+cleaned = string.replace(" ", "").lower()
+
+if cleaned == cleaned[::-1]:
+    print(f"'{string}' is a palindrome")
 else:
-    print("Not a Palindrome")
+    print(f"'{string}' is not a palindrome")

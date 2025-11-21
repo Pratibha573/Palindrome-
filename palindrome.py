@@ -1,11 +1,11 @@
-# Palindrome Program using user input
-
-def is_palindrome(text):
-    return text == text[::-1]
-
-word = input("Enter a string: ")
-
-if is_palindrome(word):
-    print("Palindrome")
+import sys
+if len(sys.argv) == 2:
+    word = sys.argv[1]
+    print("user input provided")
 else:
-    print("Not a Palindrome")
+    word = "madam"
+    rev=word[::-1]
+    if word == rev:
+        print(f"{word} is a palindrome")
+    else:
+        print(f"{word} is not a palindrome")
